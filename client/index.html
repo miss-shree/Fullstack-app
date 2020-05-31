@@ -32,7 +32,7 @@
                       
                       <div class="search-container">
                         <form>
-                          <input id="input" type="text" placeholder="Search.." name="search">
+                          <input id="searchBox" type="text" placeholder="Search.." name="search">
                           <button  type="submit"><i class="fas fa-search"></i></button>
                         </form>
                       </div>
@@ -99,24 +99,16 @@
         </div>
 
         <script>
-        function myFunction() {
-    var input, filter, name, college, city, txtValue;
-    input = document.getElementById("input");
-    filter = input.value.toUpperCase();
-    name = document.getElementsByTagName("h1");
-    college = h4.getElementsByTagName("h4");
-    city = h1.getElementsByTagName("h4");
+        var baseServerURL = "http://localhost:8080/";
+        function searchUsers(){
+          var searchQuery = document.getElementById("serachBox").value;
+          var searchURL = baseServerURL +"search?q=" + searchQuery;
 
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
+          var promiseOfResult = fetch(searchURL);
+          promiseOfResult.then(response =>{
+           
+          });
         }
-    }
-}
 </script>
 </body>
 
