@@ -17,16 +17,107 @@
         </div>
 
         <div id="profile-links">
+          <div >
+              <select id="dropbox"> 
+                  <option class="dropdowncontent" >Select Options</option>
+                  <option class="dropdowncontent" >Indore</option>
+                  <option class="dropdowncontent" >Bhopal</option>
+                  <option class="dropdowncontent" >Madras</option>
+                  <option class="dropdowncontent" >Dewas</option>
+                  <option class="dropdowncontent" >Ujjain</option>
+
+
+                </select>
+          </div>
                       
                       <div class="search-container">
                         <form>
-                          <input type="text" placeholder="Search.." name="search">
-                          <button type="submit"><i class="fas fa-search"></i></button>
+                          <input id="input" type="text" placeholder="Search.." name="search">
+                          <button  type="submit"><i class="fas fa-search"></i></button>
                         </form>
                       </div>
         </div>
 
     </div>
+
+    <div class="cardbody">        
+        <div class="card">
+            <img src="avatar1.png" class="cardimg" >
+            <h1>Dhanshree</h1>
+            <h4>SIRT</h4>
+            <h4>Bhopal</h4>
+            <button class="button1">View Profile</button>
+          </div>
+    
+                  <div class="card">
+                    <img src="avatar2.png" class="cardimg" >
+                    <h1>Akshay Mandliya</h1>
+                    <h4>Sage University</h4>
+                    <h4>Indore</h4>
+                    <button class="button1">View Profile</button>
+                  </div>
+    
+                  <div class="card">
+                    <img src="avatar1.png"  class="cardimg" >
+                    <h1>Mahima Rao</h1>
+                    <h4>IIT</h4>
+                    <h4>Madras</h4>
+                    <button class="button1">View Profile</button>
+                  </div>
+                  
+            
+                </div>
+    
+                <div class="cardbody">        
+        <div class="card">
+            <img src="avatar2.png" class="cardimg" >
+            <h1>Gaurav Chouhan</h1>
+            <h4>MediCaps</h4>
+            <h4>Indore</h4>
+            <button class="button1">View Profile</button>
+          </div>
+    
+                  <div class="card">
+                    <img src="avatar1.png" class="cardimg" >
+                    <h1>Mahima shah</h1>
+                    <h4>SDBC</h4>
+                    <h4>Dewas</h4>
+                    <button class="button1">View Profile</button>
+                  </div>
+    
+                  <div class="card">
+                    <img src="avatar2.png"  class="cardimg" >
+                    <h1>Devansh</h1>
+                    <h4>MIT</h4>
+                    <h4>Ujjain</h4>
+                    <button class="button1">View Profile</button>
+                  </div>
+    </div>
+              
+            </div>
+          
+        </div>
+
+        <script>
+        function myFunction() {
+    var input, filter, name, college, city, txtValue;
+    input = document.getElementById("input");
+    filter = input.value.toUpperCase();
+    name = document.getElementsByTagName("h1");
+    college = h4.getElementsByTagName("h4");
+    city = h1.getElementsByTagName("h4");
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 </body>
 
 </html>

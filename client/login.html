@@ -6,20 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+<style>
+    #mainbody{
+            margin: 0 auto;
+            margin-top:30px;
+            width:30%;
+            height: 450px;
+            display:flex;
+            flex-direction: column;
+            align-content: center;
+            box-shadow: 5px 2px 10px #888888;
+            transition: 0.6s;
+          }
+#mainbody:hover{
+  padding:10px;
 
+}
+          button {
+            background-color: #50A3A2;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+          }
+          
+          button:hover {
+            opacity: 0.8;
+          }
+          
+          .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #d64137;
+          }
+          
+          .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+          }
+          
+          img.avatar {
+            width: 40%;
+            border-radius: 50%;
+          }
+          
+          .container {
+            padding: 16px;
+          }
+          .inputbox{
+              height:20px;
+              padding: 6px;
+              margin-top: 8px;
+              font-size: 17px;
+              border: none;
+          }
+          
+          span.psw {
+            float: right;
+            padding-top: 16px;
+          }
+         
+          @media screen and (max-width: 600px) {
+            #navbar {
+              flex-direction: column;
+              height: 80px;
+              width:100%;
+          }
+          body {
+          overflow-x: hidden;
+            }
+            #mainbody{
+              width:70%;
+              margin: 0 auto;
+              margin-top: 30px;
+
+            }
+
+      }
+          
+</style>
 </head>
 
 <body id="mybody">
+    <!--navbar start-->
     <div id="navbar">
         <div id="brand-logo">
             <div id="typ-brand-box" class="typ-branding">TYP.</div>
             <div>TITANS</div>
         </div>
-
         <div id="profile-links">
         </div>
-
     </div>
+    <!--navbar end-->
+
+    <!--main body starts-->
+    <div id="mainbody">
+        <div id="loginbody">
+
+                <form action="index.html">
+                  <div class="imgcontainer">
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                  </div>
+                
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <br>
+                    <input id="username" class="inputbox" type="text" placeholder="Enter Username"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                name="uname" required>
+                <br>
+                <br>
+                    <label for="psw"><b>Password</b></label>
+                    <br>
+                    <input id="password" class="inputbox" type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button id-="submit" type="submit" onclick="validate()">Login</button>
+                  </div>
+
+                  </form>
+    </div>
+
+<script>
+// Below function Executes on click of login button.
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "dhanshree" && password == "@12345"){
+alert ("Login successfully");
+window.location.href = "index.html"; // Redirecting to other page.
+return false;
+}
+else{
+alert("Login unsuccessful! Try again");
+
+}
+}</script>
 </body>
 
 </html>
