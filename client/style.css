@@ -138,6 +138,102 @@
           color:#1e272e;
         
         }
+        #profile-body{
+          width:90%;
+          margin: 0 auto;
+          margin-top: 30px;
+          display:flex;
+          flex-direction: row;
+          
+          background-color: rgb(100, 165, 164);
+        }
+        #piccard{
+          width:20%;
+          height:400px;
+          background-color: white;
+          margin:10px;
+          margin-top:70px;
+          margin-left: 23px;
+          box-shadow: 5px 2px 10px #888888;
+          transition: 0.6s;          
+        }
+        
+        #icontab{
+          width:200px;
+          margin: 0 auto;             }
+        #details{
+          width:75%;
+          background-color:black ;
+          margin-left: 15px;
+          margin: 30px 30px;
+        }
+     
+        #heading{
+          font-weight: bold;
+          font-size: 30px;
+          color:white;
+          text-align: center;
+          margin: 20px 20px;
+        }
+        #description{
+          color:white;
+          width:100%;
+          margin: 0 20px 0 20px;
+        }
+        #skills{
+          color:white;
+          margin: 30px 30px;
+          width:90%;
+          margin:0 auto;
+          display:flex;
+          flex-direction: row;
+          justify-content:space-around;
+        }
+        #skillset{
+          width:10%;
+          height:30px;
+          margin-top:20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #50A3A2;
+          transition: 0.3s;
+        }
+        #skillset:hover{
+          padding:3px;
+        } 
+        #sidesection{
+          display:flex;
+          flex-direction:row;
+          justify-content: center;
+          background-color: #ccc;
+        }
+        video{
+          width:400px;
+          height:200px;
+          transition:0.6s;
+          
+        }
+        #side-section{
+          display: flex; 
+          flex-direction: row;
+          margin-top:30px;
+        }
+        #project{
+          color:white;
+          
+        }
+        #project-heading{
+          font-weight: bold;
+          font-size:20px;
+          margin-bottom:15px;
+        }
+       #button-section{
+         display:flex;
+         flex-direction:row;
+         justify-content: space-around;
+         margin:20px 20px ;
+       }
           @media screen and (max-width: 600px) {
             #navbar {
               flex-direction: row;
